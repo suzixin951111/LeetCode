@@ -54,7 +54,7 @@ namespace 反转链表_II
                 if (i == m)
                     start = curNode;
 
-                if (i == n)
+                if (i == n) 
                 {
                     start.next = curNode.next;
                     if (prevStart == null)
