@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "删除链表中的节点", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "反转链表 II", "反转链表 II\反转链表 II.csproj", "{2C39DFB8-2141-44AB-9E58-7DF4BA26669F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "二维网格图中探测环", "二维网格图中探测环\二维网格图中探测环.csproj", "{DC9BE3D3-0C0A-458E-8F4C-C60CD878F98C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{2C39DFB8-2141-44AB-9E58-7DF4BA26669F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C39DFB8-2141-44AB-9E58-7DF4BA26669F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C39DFB8-2141-44AB-9E58-7DF4BA26669F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9BE3D3-0C0A-458E-8F4C-C60CD878F98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9BE3D3-0C0A-458E-8F4C-C60CD878F98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9BE3D3-0C0A-458E-8F4C-C60CD878F98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9BE3D3-0C0A-458E-8F4C-C60CD878F98C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
