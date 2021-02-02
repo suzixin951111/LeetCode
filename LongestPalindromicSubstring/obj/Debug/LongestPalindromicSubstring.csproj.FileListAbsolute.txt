@@ -1,0 +1,6 @@
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\bin\Debug\LongestPalindromicSubstring.exe
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\bin\Debug\LongestPalindromicSubstring.pdb
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.csprojAssemblyReference.cache
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.csproj.CoreCompileInputs.cache
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.exe
+F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.pdb

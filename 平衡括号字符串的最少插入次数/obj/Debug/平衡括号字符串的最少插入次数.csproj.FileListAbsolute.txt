@@ -1,0 +1,6 @@
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\bin\Debug\平衡括号字符串的最少插入次数.exe
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\bin\Debug\平衡括号字符串的最少插入次数.pdb
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\obj\Debug\平衡括号字符串的最少插入次数.csprojAssemblyReference.cache
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\obj\Debug\平衡括号字符串的最少插入次数.csproj.CoreCompileInputs.cache
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\obj\Debug\平衡括号字符串的最少插入次数.exe
+F:\C#Project\LeetCode\LeetCode\平衡括号字符串的最少插入次数\obj\Debug\平衡括号字符串的最少插入次数.pdb
