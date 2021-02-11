@@ -4,3 +4,5 @@ F:\C#Project\LeetCode\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySea
 F:\C#Project\LeetCode\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySearchTrees.csproj.CoreCompileInputs.cache
 F:\C#Project\LeetCode\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySearchTrees.exe
 F:\C#Project\LeetCode\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySearchTrees.pdb
+D:\Project\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySearchTrees.exe
+D:\Project\LeetCode\UniqueBinarySearchTrees\obj\Debug\UniqueBinarySearchTrees.pdb

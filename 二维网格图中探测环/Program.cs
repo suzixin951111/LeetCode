@@ -55,60 +55,71 @@ namespace 二维网格图中探测环
 
         public static bool ContainsCycle(char[][] grid)
         {
-            //用一个无符号32位Int来表示当前轮次检查过的矩阵的位置,1~9位表示列 10~18位表示行 19~22位表示当前轮次检查过的4个方向
-            //每个轮次检索到的位置用一个队列存储
-            var checkQueue = new List<uint>();
-
-            uint allDir = 0x3c0000; //4个方向位全为1的数，用于后续检测方向
-            uint up = 0x40000; //上为1的数，用于后续检测方向
-            uint down = 0x80000; //下为1的数，用于后续检测方向
-            uint left = 0x100000; //左为1的数，用于后续检测方向
-            uint right = 0x200000; //右为1的数，用于后续检测方向
-
-            //当前检索的字符 '0'表示未检索任何字符
-            char curChar = '0';
-
-            //用一个无符号16位的Int数组的二进制位来作为矩阵存储检查过的位置
-            ushort[] checkedFlag = new ushort[grid.Length];
-
-            for (int i = 0; i < grid.Length; ++i)
+            var checkedMatrix = new byte[grid.Length][];
+            var colCount = (int) Math.Ceiling(grid.Length / 8f);
+            for (int i = 0; i < checkedMatrix.Length; ++i)
             {
-                var row = grid[i];
-                for (int j = 0; j < row.Length; ++j)
+                checkedMatrix[i] = new byte[colCount];
+            }
+
+            var IsChceked = new Func<int, int, bool>((row, col) =>
+            {
+                return ((1 << (col % 8)) & checkedMatrix[row][col / 8]) > 0;
+            });
+
+            var SetChceked = new Action<int, int>((row, col) =>
+            {
+                var realCol = col / 8;
+                var idx = col % 8;
+                checkedMatrix[row][realCol] |= (byte) (1 << idx);
+            });
+
+
+            var checkStack = new List<int>();
+            for (int i = 0; i < grid.Length; i++)
+            {
+                var curRow = grid[i];
+                for (int j = 0; j < curRow.Length; j++)
                 {
-                    if (((1 << j) & checkedFlag[i]) != 0)
-                        continue; //该位置已经检索过了
+                    if (IsChceked(i, j))
+                        continue;
 
-                    while (true)
+                    //用高16位表示行，低16位表示列
+                    var pos = i << 16 | j;
+                    checkStack.Add(pos);
+                    while (checkStack.Count > 0)
                     {
-                        
-                        //处理边界情况，直接把检索不到的边界方向设为1
-                        uint pos = (uint) (i << 8 | j);
-                        if (i == 0)
-                            pos |= up;
-                        else if (i == grid.Length - 1)
-                            pos |= down;
-
-                        if (j == 0)
-                            pos |= left;
-                        else if (j == row.Length - 1)
-                            pos |= right;
-
-                        checkQueue.Add(pos);
-                        curChar = grid[i][j];
-                        var curCheckPos = pos;
-                        while (true)
+                        var curPos = checkStack[checkStack.Count - 1];
+                        var row = curPos >> 16;
+                        var col = curPos & 0x0000ffff;
+                        SetChceked(row, col);
+                        //依次检查上 下 左 右
+                        if (row > 0 && !IsChceked(row - 1, col) && grid[row - 1][col] == grid[row][col])
                         {
-                            //按照上下左右的顺序依次检测
-
-                            if ((pos & up) == 0 && grid[i - 1][j] == curChar && (checkedFlag[i] & (1 << j)) == 0)
-                            {
-                                pos = (uint) ((i - 1) << 8 | j);
-                            }
+                            checkStack.Add(row - 1 << 16 | col);
+                            break;
                         }
+
+                        if (row < grid.Length - 1 && !IsChceked(row + 1, col) && grid[row + 1][col] == grid[row][col])
+                        {
+                            checkStack.Add(row + 1 << 16 | col);
+                            break;
+                        }
+
+                        if (col > 0 && !IsChceked(row, col - 1) && grid[row][col - 1] == grid[row][col])
+                        {
+                            checkStack.Add(row << 16 | (col - 1));
+                            break;
+                        }
+
+                        if (col < colCount - 1 && !IsChceked(row, col + 1) && grid[row][col + 1] == grid[row][col])
+                        {
+                            checkStack.Add(row << 16 | (col + 1));
+                            break;
+                        }
+                        
+                        // TODO
                     }
-                    
-                    //未完待续...
                 }
             }
 

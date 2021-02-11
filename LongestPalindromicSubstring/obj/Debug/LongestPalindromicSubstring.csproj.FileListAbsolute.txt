@@ -4,3 +4,5 @@ F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPali
 F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.csproj.CoreCompileInputs.cache
 F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.exe
 F:\C#Project\LeetCode\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.pdb
+D:\Project\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.exe
+D:\Project\LeetCode\LongestPalindromicSubstring\obj\Debug\LongestPalindromicSubstring.pdb

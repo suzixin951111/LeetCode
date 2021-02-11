@@ -4,3 +4,5 @@ F:\C#Project\LeetCode\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.cspro
 F:\C#Project\LeetCode\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.csproj.CoreCompileInputs.cache
 F:\C#Project\LeetCode\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.exe
 F:\C#Project\LeetCode\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.pdb
+D:\Project\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.exe
+D:\Project\LeetCode\MaximalRectangle\obj\Debug\MaximalRectangle.pdb
