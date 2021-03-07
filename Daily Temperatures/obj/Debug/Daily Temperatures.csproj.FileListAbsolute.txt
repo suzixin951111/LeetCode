@@ -4,3 +4,9 @@ F:\C#Project\LeetCode\LeetCode\Daily Temperatures\obj\Debug\Daily Temperatures.c
 F:\C#Project\LeetCode\LeetCode\Daily Temperatures\obj\Debug\Daily Temperatures.csproj.CoreCompileInputs.cache
 F:\C#Project\LeetCode\LeetCode\Daily Temperatures\obj\Debug\Daily_Temperatures.exe
 F:\C#Project\LeetCode\LeetCode\Daily Temperatures\obj\Debug\Daily_Temperatures.pdb
+D:\Project\LeetCode\Daily Temperatures\obj\Debug\Daily_Temperatures.exe
+D:\Project\LeetCode\Daily Temperatures\obj\Debug\Daily_Temperatures.pdb
+D:\Project\LeetCode\Daily Temperatures\bin\Debug\Daily_Temperatures.exe
+D:\Project\LeetCode\Daily Temperatures\bin\Debug\Daily_Temperatures.pdb
+D:\Project\LeetCode\Daily Temperatures\obj\Debug\Daily Temperatures.csprojAssemblyReference.cache
+D:\Project\LeetCode\Daily Temperatures\obj\Debug\Daily Temperatures.csproj.CoreCompileInputs.cache
